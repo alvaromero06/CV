@@ -1,0 +1,212 @@
+
+*{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+body {
+    margin: 0;
+}
+
+/* Menu */
+
+.accueil{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 8%;
+    }
+
+.leftmenu {
+    display: flex;
+    height: 100vh;
+   }
+    
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: #1d3461;
+    padding: 20%;
+    
+}
+
+.liste1 {
+    list-style: none;
+    padding: 0;
+    height: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.liste1 li{   
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+.languages a {
+    margin: 0 5px;
+    display: flex;
+  }
+  
+  .languages img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .languages img:hover {
+    transform: scale(1.2);
+  }
+
+/* A propos de moi */
+/*column about me*/
+.aboutme{width: 45%;
+color: black;
+text-align: justify;
+align-content: center;
+}
+
+.aboutme > h2,  .aboutme > h1 {
+    text-transform: uppercase;}
+
+hr {width: 85%;
+height: 2px;
+color: white;}
+
+.description{
+    padding-right: 10%;}
+
+/*column picture*/   
+.contactme {width: 45%;
+text-align: center;
+background-color: #1d3461;
+color: white;
+padding: 2%;
+align-content: center;
+}
+
+.contactme > p{
+    text-align: center;}
+
+.links {color: white;}
+
+.links:hover{
+    font-weight: bold;
+    color: #fb3640;}
+
+.contactme > img {height: 40%;
+width: 35%;
+border-radius: 50px;}
+
+/* Carriere */
+.swiffy-slider{
+    width: 90%;
+}
+.ratio{
+    overflow: hidden;
+}
+.ratio img{
+    padding: 0 20%;
+}
+#saladandco{
+    padding: 15%;
+}
+.card-body{
+    background-color: #1d3461;
+    color: #fff;
+    align-content: center;
+}
+
+/* Formation */
+
+#acatourisme{
+    padding: 12% 28%;
+}
+.btn{
+    background-color: #fb3640;
+}
+
+
+/* Competences */
+
+/* Styles de base */
+.competences{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    padding: 2% 15%;
+    width: 90%;
+}
+
+.flip-container {
+    perspective: 1000px; /* Ajoute de la profondeur */
+    width: 400px;
+    height: 290px;
+  }
+  
+  .flip-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Nécessaire pour activer les faces 3D */
+    transition: transform 0.6s; /* Animation fluide */
+  }
+  
+  .flip-container:hover .flip-card {
+    transform: rotateY(180deg); /* Retourne la carte au survol */
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Cache le contenu de l'autre face */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Styles des faces */
+  .front {
+    background: #1d3461;
+    text-transform: uppercase; 
+  }
+  
+  .back {
+    background: #fb3640; 
+    transform: rotateY(180deg);
+  }
+
+  .progress{
+    width: 50%;
+    height: 15%;
+    font-size: 12pt;
+  }
+  .progress-bar{
+    background-color: #1d3461;
+  }
+  
+  .espagnol .progress-bar{
+    width: 100%
+  }
+  .progress-bar{
+    width: 80%
+  }
+  
+  #bars {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
